@@ -29,7 +29,7 @@ import joblib,os
 import pandas as pd
 
 # Vectorizer
-news_vectorizer = open("resources/Logistics.pkl","rb")
+news_vectorizer = open("resources/AM5_model.pkl","rb")
 tweet_cv = joblib.load(news_vectorizer) # loading your vectorizer from the pkl file
 
 # Load your raw data
@@ -41,7 +41,7 @@ def main():
 
 	# Creates a main title and subheader on your page -
 	# these are static across all pages
-	st.title(" Climate change Tweet Classifier")
+	st.title(" Climate changes Tweet Classifier")
 	st.subheader("Climate change tweet classification")
 
 	# Creating sidebar with selection box -
