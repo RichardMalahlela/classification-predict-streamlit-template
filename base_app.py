@@ -29,7 +29,11 @@ import joblib,os
 import pandas as pd
 
 # Vectorizer
+<<<<<<< Updated upstream
 news_vectorizer = open("resources/tfidfvect.pkl","rb")
+=======
+news_vectorizer = open("resources/AM5_model.pkl","rb")
+>>>>>>> Stashed changes
 tweet_cv = joblib.load(news_vectorizer) # loading your vectorizer from the pkl file
 
 # Load your raw data
@@ -41,7 +45,11 @@ def main():
 
 	# Creates a main title and subheader on your page -
 	# these are static across all pages
+<<<<<<< Updated upstream
 	st.title("Tweet Classifer")
+=======
+	st.title("Precious Climate change Tweets Classifier")
+>>>>>>> Stashed changes
 	st.subheader("Climate change tweet classification")
 
 	# Creating sidebar with selection box -
@@ -70,7 +78,7 @@ def main():
 			vect_text = tweet_cv.transform([tweet_text]).toarray()
 			# Load your .pkl file with the model of your choice + make predictions
 			# Try loading in multiple models to give the user a choice
-			predictor = joblib.load(open(os.path.join("resources/Logistic_regression.pkl"),"rb"))
+			predictor = joblib.load(open(os.path.join("resources/AM5_model.pkl"),"rb"))
 			prediction = predictor.predict(vect_text)
 
 			# When model has successfully run, will print prediction
