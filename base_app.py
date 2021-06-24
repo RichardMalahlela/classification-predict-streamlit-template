@@ -499,7 +499,6 @@ def main():
 		st.markdown("Observations:\n\n -Neutral Tweets: The words like climate change, global warming appear to be big which means that they are mosst coomon words in our neutral tweets. \n\n -Anti Tweets: Donald Trump appears a lot here. He is probably one of the people who do not believe in global warming. Also words like blame and scam are probably unique in here. \n\n -News Tweets: Words like fight climate appear a lot. \n\n -Pro Tweets: Words like tackle climate, change are probably unique in here too. \n\n -All Tweets: As expected, words like climate change and global warming are more visible/common.")
 		st.subheader("\n\n PUNCTUATION FREQUENCY")
 		st.image('./Screenshot 2021-06-24 154831.png')
-		st.markdown("Observations: \n\n -The "-" punctuation is used a lot in our tweets then "|" is the second most used. \n\n -The least used puntuation are ;% and - \n\n -We expected @ and # to be mostly used since we are deleaing with tweeter data")
 		st.subheader("\n\n WORD CLOUD OF PEOLPLE IN OUR TWEETS")
 		st.image('./Screenshot 2021-06-24 155559.png')
 		st.image('./Screenshot 2021-06-24 155541.png')
